@@ -24,6 +24,7 @@ def register(request):
                 user=User.objects.create_user(username=un,password=ps,email=em,first_name=fn,last_name=ln)
                 user.save()
                 print("user created")
+                return redirect('login')
 
         else:
             messages.info(request, "page not found")
