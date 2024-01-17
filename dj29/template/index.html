@@ -34,7 +34,7 @@
 									<li class="active"><a href="about.html">About us</a></li>
 
 									{% if user.is_authenticated %}
-									<li>Hello {{user.first_name}}</li>
+									<li>Hello {{user.username}}</li>
 									<li><a href="credentials/logout">Logout</a></li>
 
 									{% else %}
